@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon Profil Marin</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to bottom, #4dd0e1, #e0f7fa);
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px gray;
+
+            /* Animation */
+            animation: apparition 3s ease-in-out;
+        }
+
+        img {
+            width: 120px;
+            border-radius: 50%;
+        }
+
+        button {
+            background-color: #006064;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* Animation CSS */
+        @keyframes apparition {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Ocean_waves.jpg">
+
+    <h2>Samuel 🌊</h2>
+    <p>Étudiant en Sciences de la Mer</p>
+
+    <button onclick="info()">Voir message</button>
+</div>
+
+<script>
+function info() {
+    alert("Les océans sont l'avenir 🌍");
+}
+</script>
+
+</body>
+</html>
